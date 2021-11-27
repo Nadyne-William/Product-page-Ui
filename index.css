@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    background-color: rgba(192, 194, 183, 0.568);
+    width: 100%;
+    height: 1050px;
+}
+.card{
+    width: 80%;
+    height: 1010px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 30px rgba(128, 128, 128, 0.438);
+}
+nav{
+    height: 80px;
+    /* background-color: violet; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: solid 3.5px rgba(224, 226, 213, 0.342);
+}
+.hide{
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.items{
+    /* width: 400px; */
+}
+.items a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+/* .nav-icons{
+    border-radius: 50px;
+
+} */
+.bi-cart :hover{
+    background-color: grey;
+}
+.bi-cart{
+    border-radius: 50px;
+    width: 20px;
+}
+.items i{
+    font-size: 22px;
+    font-weight: 900;
+}
+#hamburger{
+    display: none;
+}
+.second-section{
+    width: 100%;
+    /* background-color: blue; */
+    height: 720px;
+    display: flex;
+}
+.bag-image{
+    flex-basis: 50%;
+    /* background-color: blue; */
+}
+.bag_desc{
+    flex-basis: 50%;
+    /* background-color: brown; */
+    text-align: center;
+}
+
+.bag-pic{
+    width: 90%;
+    background-color: rgba(224, 226, 213, 0.425);
+    /* margin: auto; */
+    margin-left: 10px;
+    margin-top: 4px;
+    height: 910px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-page{
+    padding-top: 80px;
+}
+.first-text{
+    font-size: 40px;
+    font-weight: 600;
+}
+.lorem{
+    font-size: 18px;
+    width: 95%;
+    margin: auto;
+    color: rgb(128, 128, 128);
+}
+.color{
+    font-size: 18px;
+    font-weight: 600;
+}
+.circle-box{
+    width: 40%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+    /* margin-top: 40px; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#cir2{
+    background-color: rgb(16, 16, 83);
+}
+#cir3{
+    background-color: rgb(68, 8, 8);
+}
+#cir4{
+    background-color: rgba(109, 80, 16, 0.904);
+}
+.bi-check2{
+    /* margin: auto; */
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 25px;
+    position: relative;
+    top:10px;
+}
+.quantity{
+    font-weight: 900;
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    background-color: rgba(224, 226, 213, 0.596);
+    border-radius: 50px;
+    margin-top: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bi-plus:hover{
+    cursor: pointer;
+}
+.bi-dash:hover{
+    cursor: pointer;
+}
+.cart{
+    color: rgba(245, 245, 245, 0.877);
+    width: 35%;
+    background-color: black;
+    height: 40px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.cart:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    /* background-color: blue; */
+    /* margin-top: 120px; */
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    /* margin-right: 20px; */
+    /* padding-right: 15px; */
+}
+footer a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+.bi-caret-down{
+    font-size: 30px;
+    position: absolute;
+    display: none;
+}
+.bi-caret-down:hover{
+    color:grey;
+}
+#details{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: 600;
+}
+@media(max-width:1188px){
+    .bag-image img{
+        width: 300px;
+        height: 300px;
+    }
+    .bi-check2{
+        top: 2.5px;
+    }
+    .circle{
+        width: 40px;
+        height: 40px;
+    }
+    /* footer{
+        padding: 1000px 20px;
+    } */
+    footer a{
+        font-size: 16px;
+    }
+}
+@media(max-width:1093px){
+    .circle{
+        width:35px;
+        height: 35px;
+    }
+    .bi-check2{
+        /* position: relative; */
+        top: 3px;
+    }
+}
+@media(max-width:1013px){
+    footer a{
+        font-size: 14px;
+    }
+    .lorem{
+        font-size: 14px;
+    }
+    .items a{
+        font-size: 16px;
+    }
+    .items i{
+        font-size: 18px;
+    }
+    .cart{
+        font-size: 14px;
+    }
+}
+@media(max-width:956px){
+    .bag-image img{
+        width: 300px;
+        height: 300px;
+        top: 270px;
+        left:25px ;
+    }
+    .card{
+        height: 1000px;
+    }
+    footer{
+        /* padding: 70px 20px; */
+    }
+}
+@media(max-width:902px){
+    .items i{
+        display: none;
+    }
+    .items a{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        font-size: 30px;
+    }
+    .second-section{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .bag-pic{
+        /* flex-basis: 100%; */
+        height: 300px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .bag-image img{
+        width: 200px;
+        height: 200px;
+        top: 80px;
+        left: 220px;
+        background-position: center;
+    }
+    .card{
+        height: max-content;
+    }
+    .bag_desc{
+       padding: 20px 20px;
+    } 
+    .cart{
+        width: 50%;
+    }
+}
+@media(max-width:515px){
+    .cart{
+        width: 60%;
+    }
+    .circle-box{
+        width: 50%;
+    }
+    .quantity{
+        width: 40%;
+    }
+}
+@media(max-width:470px){
+    footer a{
+        display: none;
+    }
+    .bi-caret-down{
+        display: inline;
+    }
+    .circle{
+        height: 25px;
+        width: 25px;
+    }
+    .bi-check2{
+        font-size: 14px;
+    }
+}
